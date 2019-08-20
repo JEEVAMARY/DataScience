@@ -1,0 +1,12 @@
+hadoop fs -mkdir leno_jeeva
+
+hadoop fs -put classification.csv leno_jeeva
+
+hadoop fs -put google_review.csv leno_jeeva
+
+spark-submit review_reg.py
+
+spark-submit churn_classification.py
+
+chmod +x project_leno_jeeva
+
