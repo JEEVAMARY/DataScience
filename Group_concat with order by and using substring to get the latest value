@@ -1,0 +1,4 @@
+SELECT T.COL, substring_index(group_concat( T.val order by T.id desc),',',1) as state
+FROM TABLE_
+WHERE _CONDITION 
+group by T.COL;
