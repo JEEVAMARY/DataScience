@@ -1,0 +1,7 @@
+df.dtypes
+numeric_var = [key for key in dict(df.dtypes)
+                   if dict(df.dtypes)[key]
+                       in ['float64','float32','int32','int64']] # Numeric Variable
+
+cat_var = [key for key in dict(df.dtypes)
+             if dict(df.dtypes)[key] in ['object'] ] # Categorical Varible
